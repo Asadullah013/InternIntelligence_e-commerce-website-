@@ -39,7 +39,7 @@
       const role = document.getElementById('role').value;
 
       try {
-        const res = await fetch('http://internintelligencee-commerce-website-production.up.railway.app/signup', {
+        const res = await fetch('https://internintelligencee-commerce-website-production.up.railway.app/signup', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ name, email, phone, address, password, role }),
