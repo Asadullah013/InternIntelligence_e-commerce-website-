@@ -297,7 +297,7 @@
     font-size: 13px;
     
   }
-
+}
 
   </style>
 </head>
@@ -344,7 +344,7 @@
     const productList = document.getElementById('productList');
 
     async function fetchSellerProducts() {
-      const res = await fetch('http://internintelligencee-commerce-website-production.up.railway.app/my-products', {
+      const res = await fetch('https://internintelligencee-commerce-website-production.up.railway.app/my-products', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ token }),
@@ -394,7 +394,7 @@ function closeModal() {
 
 
     async function fetchMyOrders() {
-      const response = await fetch('http://internintelligencee-commerce-website-production.up.railway.app/my-orders', {
+      const response = await fetch('https://internintelligencee-commerce-website-production.up.railway.app/my-orders', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -432,7 +432,7 @@ function closeModal() {
       const price = parseFloat(document.getElementById('productPrice').value);
       const image = document.getElementById('productImage').value.trim();
 
-      const res = await fetch('http://internintelligencee-commerce-website-production.up.railway.app/add-product', {
+      const res = await fetch('https://internintelligencee-commerce-website-production.up.railway.app/add-product', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ token, name, description, price, image }),
@@ -455,7 +455,7 @@ function closeModal() {
     const confirmDelete = confirm("Are you sure you want to remove this product?");
     if (!confirmDelete) return;
 
-    const res = await fetch('http://internintelligencee-commerce-website-production.up.railway.app/delete-product', {
+    const res = await fetch('https://internintelligencee-commerce-website-production.up.railway.app/delete-product', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ token, productId })
