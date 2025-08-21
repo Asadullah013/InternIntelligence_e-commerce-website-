@@ -744,7 +744,7 @@ function filterProducts() {
 }
 
   async function addToCart(productId) {
-  const res = await fetch('https://magsi.netlify.app/add-to-cart', {
+  const res = await fetch('https://intern-intelligence-e-commerce-webs.vercel.app/add-to-cart', {
 
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -764,7 +764,7 @@ function filterProducts() {
 
 
     async function buyProduct(productId) {
-  const res = await fetch('https://magsi.netlify.app/buy-product', {
+  const res = await fetch('https://intern-intelligence-e-commerce-webs.vercel.app/buy-product', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ token, productId }),
@@ -783,7 +783,7 @@ function filterProducts() {
 
 
     async function loadCart() {
-      const res = await fetch('https://magsi.netlify.app/cart', {
+      const res = await fetch('https://intern-intelligence-e-commerce-webs.vercel.app/cart', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ token }),
@@ -812,7 +812,7 @@ function filterProducts() {
     }
 
     async function loadPurchases() {
-      const res = await fetch('https://magsi.netlify.app/my-purchases', {
+      const res = await fetch('https://intern-intelligence-e-commerce-webs.vercel.app/my-purchases', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ token }),
@@ -906,7 +906,7 @@ function openCartSection(event) {
 
 
 async function removeFromCart(productId) {
-  const res = await fetch('https://magsi.netlify.app/remove-from-cart', {
+  const res = await fetch('https://intern-intelligence-e-commerce-webs.vercel.app/remove-from-cart', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ token, productId }),
@@ -961,4 +961,5 @@ function handleLogout() {
   </script>
 </body>
 </html>
+
 
