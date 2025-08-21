@@ -27,7 +27,7 @@
     const password = document.getElementById('password').value;
 
     try {
-      const res = await fetch('https://magsi.netlify.app/login', {
+      const res = await fetch('https://intern-intelligence-e-commerce-webs.vercel.app/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
@@ -64,3 +64,4 @@ if (res.ok) {
 </script>
 </body>
 </html>
+
