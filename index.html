@@ -712,7 +712,7 @@ const email = localStorage.getItem('email');
     const purchaseList = document.getElementById('purchaseList');
 
     async function loadProducts() {
-  const res = await fetch('https://magsi.netlify.app/products');
+  const res = await fetch('https://intern-intelligence-e-commerce-webs.vercel.app/products');
   const products = await res.json();
   allProducts = products; // store for search
   displayProducts(products); // show all by default
@@ -961,3 +961,4 @@ function handleLogout() {
   </script>
 </body>
 </html>
+
